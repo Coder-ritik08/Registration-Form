@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+        <form action="/login" method="POST">
+            <div class="row register-form">
+                <div class="col-md-4 mx-auto">
+                <h2>login page</h1>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="password" class="form-control" placeholder="Password" value="" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <p>Dosn't have any account <a href="/register">Create Account</a></p>
+                </div>
+            </div>
+        </form>
+</body>
+</html>
